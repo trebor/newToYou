@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Move New to You Button",
+  "version": "1.0",
+  "description": "Moves the 'New to You' button on YouTube to the leftmost position in the row",
+  "permissions": ["scripting"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
